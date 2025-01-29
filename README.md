@@ -31,12 +31,22 @@ DB_DATABASE=nama_database
 DB_USERNAME=nama_user
 DB_PASSWORD=password
 
-8. Generate Application Key
+pada bagian dibawah isi dengan ketentuan seperti ini :
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=isi dengan email anda 
+MAIL_PASSWORD=isi dengan cara mengaktifkan A2F pada email yang dipakai pada bagian MAIL_USERNAME, jika sudah aktif, pergi ke pencarian lalu cari app password atau sandi aplikasi lalu buat project baru lalu nanti akan muncul kode, lalu salin kode tersebut kebagian ini (MAIL_PASSWORD).
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+9. Generate Application Key
 Ketik: php artisan key:generate
 
-9. Migrasi database
+10. Migrasi database
 ketik: php artisan migrate
 
-10. Jalankan server Laravel
+11. Jalankan server Laravel
 Ketik: php artisan serve
 
